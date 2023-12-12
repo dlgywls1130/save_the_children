@@ -1,0 +1,315 @@
+
+/* root */
+:root{
+    --main-color:#B17A60;
+    --pink-color:#F79497;
+}
+
+
+/* font */
+
+/* dongle */
+@font-face {
+    font-family: 'Dongle';
+    font-weight: 300;
+    src: url('../font/Dongle-Light.ttf') format('ttf'),
+    url('../font/Dongle-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dongle';
+    font-weight: 500;
+    src: url('../font/Dongle-Regular.ttf') format('ttf'),
+    url('../font/Dongle-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dongle';
+    font-weight: 700;
+    src: url('../font/Dongle-Bold.ttf') format('ttf'),
+    url('../font/Dongle-Bold.woff') format('woff');
+}
+
+
+/* Gmarket */
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    src: url('../font/GmarketSansLight.ttf') format('ttf'),
+    url('../font/GmarketSansLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    src: url('../font/GmarketSansMedium.ttf') format('ttf'),
+    url('../font/GmarketSansMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    src: url('../font/GmarketSansBold.ttf') format('ttf'),
+    url('../font/GmarketSansBold.woff') format('woff');
+}
+
+
+/* nanumsqure */
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url('../font/NanumSquareL.ttf') format('ttf'),
+    url('../font/NanumSquareL.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 500;
+    src: url('../font/NanumSquareR.ttf') format('ttf'),
+    url('../font/NanumSquareR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 600;
+    src: url('../font/NanumSquareB.ttf') format('ttf'),
+    url('../font/NanumSquareB.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    src: url('../font/NanumSquareEB.ttf') format('ttf'),
+    url('../font/NanumSquareEB.woff') format('woff');
+}
+
+
+
+/* scdream5 */
+@font-face {
+    font-family: 'SCDream5';
+    src: url('../font/SCDream5.woff') format('woff'),
+    url('../font/SCDream5.ttf') format('ttf'),
+    url('../font/SCDream5.otf') format('otf');
+}
+
+
+.section_wrapper{
+    max-width:1920px;
+    width: 100%;
+
+}
+
+.se_wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+
+/* common */
+.mb-45{margin-bottom: 45px;}
+
+/* section01 */
+
+
+.section01{
+    background: url('../img/back01.jpg') no-repeat;
+    height: 1080px;
+
+}
+
+.se01{
+    padding: 230px 0 70px;
+
+}
+.se01_sub{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sub_logo{
+    width: 198px;
+    height: 65px;
+    margin-right: 15px;
+}
+
+.sub_logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.se01_sub p{
+    width: 302px;
+    height: 52px;
+    background: #B17A60;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.03em;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'GmarketSans',sans-serif;
+    color: #fff;
+}
+
+.seo01_title{
+    font-family: 'Dongle',sans-serif;
+    font-weight: 500;
+    font-size: 150px;
+    color: var(--main-color);
+    letter-spacing: -0.03em;
+}
+
+.seo01_title_two{
+    font-family: 'Dongle',sans-serif;
+    font-weight: 500;
+    font-size: 120px;
+    color: var(--main-color);
+    letter-spacing: -0.03em;
+    margin-top: -4%;
+    margin-bottom: 50px;
+}
+
+.section_descript{
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: #000;
+}
+
+.donation_link{
+    width: 560px;
+    height: 75px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--pink-color);
+    color: #fff;
+    font-family: 'GmarketSans';
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    margin: 45px auto 0;
+}
+/* section02 */
+
+.section02{
+    height: 1340px;
+    background: url('../img/back03.jpg') no-repeat;
+}
+
+.se02{
+    padding: 76px 0 96px;
+    height: 100%;
+}
+.postit_wrapper{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.ex_text{
+    font-family: 'GmarketSans';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.postit{
+    font-family: 'SCDream5';
+    font-size: 23px;
+    line-height: 35px;
+    position: absolute;
+}
+
+.postit01{
+    background:url('../img/post04.png') no-repeat;
+    width: 438px;
+    height: 438px;
+    background-size: contain;
+    padding: 150px 76px 99px;
+    box-sizing: border-box;
+    left: 40px;
+    top: 0;
+    transform: rotate(358deg);
+}
+
+.postit02{
+    background:url('../img/post05.png') no-repeat;
+    width: 416px;
+    height: 416px;
+    background-size: contain;
+    padding: 120px 55px 99px;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    transform: rotate(10deg);
+}
+
+.postit03{
+    background:url('../img/post02.png') no-repeat;
+    width: 350px;
+    height: 350px;
+    background-size: contain;
+    padding: 120px 40px 60px;
+    box-sizing: border-box;
+    left: 0;
+    top: 29%;
+    transform: rotate(7deg);
+}
+
+.postit04{
+    background:url('../img/post03.png') no-repeat;
+    width: 332px;
+    height: 332px;
+    background-size: contain;
+    padding: 120px 56px 60px;
+    box-sizing: border-box;
+    top: 31%;
+    right: 0;
+    transform: rotate(354deg);
+}
+
+.postit05{
+    background:url('../img/post01.png') no-repeat;
+    width: 350px;
+    height: 350px;
+    background-size: contain;
+    padding: 120px 40px 60px;
+    box-sizing: border-box;
+    top: 52%;
+    left: 0;
+    transform: rotate(-9deg);
+}
+/* section03 */
+
+.section03{
+    height: 1340px;
+    background: url('../img/back04.jpg') no-repeat;
+}
+
+/* section04 */
+
+.section04{
+    height: 1080px;
+
+}
+
+/* section05 */
+
+/* section06 */
+
+/* section07 */
+
+/* section08 */

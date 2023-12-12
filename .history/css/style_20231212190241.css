@@ -1,0 +1,35 @@
+
+
+.section_wrapper{
+    max-width:1920px;
+    width: 100%;
+
+}
+
+
+/* section01 */
+
+
+.section01{
+    height: 1080px;
+    background: url('../img/back01.jpg') no-repeat;
+}
+
+/* section02 */
+
+.section02{
+    height: 1340px;
+    background: url('../img/back03.jpg') no-repeat;
+}
+
+/* section03 */
+
+/* section04 */
+
+/* section05 */
+
+/* section06 */
+
+/* section07 */
+
+/* section08 */
