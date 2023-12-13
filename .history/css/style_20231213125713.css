@@ -495,8 +495,6 @@
 .se_step_list .se_step .step_ico img {
     width: 138px;
     height: 138px;
-    object-fit: contain;
-    object-position: 73%;
 }
 
 .step_descript{
