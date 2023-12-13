@@ -177,13 +177,8 @@
     letter-spacing: -0.03em;
     margin-top: -4%;
     margin-bottom: 50px;
-    display: flex;
-    align-items: center;
 }
 
-.seo01_title_two span{
-    margin: 0 1.5rem;
-}
 .section_descript{
     font-size: 25px;
     line-height: 35px;
@@ -211,23 +206,9 @@
 }
 
 
-@keyframes roll {
-    from {
-        transform: translateY(40%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-  }
-  
 
-#rollingText {
-    display: inline-block;
-    animation: roll 0.5s ease-in-out;
 
-}
+
 
 /* section02 */
 

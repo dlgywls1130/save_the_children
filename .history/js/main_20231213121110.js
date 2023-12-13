@@ -31,21 +31,16 @@ const accordionItem = document.querySelectorAll(".accordion-item");
 
 //rolling
 
-document.addEventListener('DOMContentLoaded', function () {
-    var words = ['백일', '첫 옹알이', '첫 뒤집기', '첫 나들이', '첫 이유식', '첫돌', '첫 걸음마', '모든'];
-    var index = 0;
-    var rollingText = document.getElementById('rollingText');
-
-    function updateText() {
-        rollingText.style.animation = 'none'; // Reset animation
-        rollingText.offsetHeight; // Trigger reflow to restart animation
-        rollingText.style.animation = null; // Restart animation
-
-        rollingText.textContent = words[index++];
-        if (index === words.length) {
-            clearInterval(intervalId); // Stop the rolling when the last word is displayed
-        }
-    }
-
-    var intervalId = setInterval(updateText, 3000); // Adjust the interval as needed
-});
+$(document).ready(function() {
+    var words = ["탄생", "백일", "첫 옹알이", "첫 뒤집기", "첫 나들이", "첫 이유식", "첫돌", "첫 걸음마", "모든"],
+        i = 0;
+    var interval = setInterval(function() {
+      $('#rollingText').fadeOut(function() {
+        $(this).text(words[i++]).fadeIn();
+      });
+      if (i >= words.length) { // '모든'에 도달했을 때
+        clearInterval(interval); // interval을 멈춥니다.
+      }
+    }, 2000); // 2초마다 변경
+  });
+  

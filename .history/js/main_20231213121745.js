@@ -31,21 +31,17 @@ const accordionItem = document.querySelectorAll(".accordion-item");
 
 //rolling
 
-document.addEventListener('DOMContentLoaded', function () {
-    var words = ['백일', '첫 옹알이', '첫 뒤집기', '첫 나들이', '첫 이유식', '첫돌', '첫 걸음마', '모든'];
-    var index = 0;
-    var rollingText = document.getElementById('rollingText');
+const words = ["탄생", "백일", "첫 옹알이", "첫 뒤집기", "첫 나들이", "첫 이유식", "첫돌", "첫 걸음마", "모든"];
+        let index = 0;
+        const element = document.getElementById("rollingText");
 
-    function updateText() {
-        rollingText.style.animation = 'none'; // Reset animation
-        rollingText.offsetHeight; // Trigger reflow to restart animation
-        rollingText.style.animation = null; // Restart animation
-
-        rollingText.textContent = words[index++];
-        if (index === words.length) {
-            clearInterval(intervalId); // Stop the rolling when the last word is displayed
+        function updateText() {
+            element.innerText = words[index];
+            index++;
+            if (index < words.length) {
+                setTimeout(updateText, 2000); // 2초마다 텍스트 변경
+            }
         }
-    }
 
-    var intervalId = setInterval(updateText, 3000); // Adjust the interval as needed
-});
+        setTimeout(updateText, 2000); // 첫 번째 변경을 위한 초기 지연
+  

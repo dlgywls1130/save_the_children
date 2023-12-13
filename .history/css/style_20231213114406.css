@@ -177,13 +177,8 @@
     letter-spacing: -0.03em;
     margin-top: -4%;
     margin-bottom: 50px;
-    display: flex;
-    align-items: center;
 }
 
-.seo01_title_two span{
-    margin: 0 1.5rem;
-}
 .section_descript{
     font-size: 25px;
     line-height: 35px;
@@ -209,26 +204,6 @@
     text-decoration: none;
     margin: 45px auto 0;
 }
-
-
-@keyframes roll {
-    from {
-        transform: translateY(40%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-  }
-  
-
-#rollingText {
-    display: inline-block;
-    animation: roll 0.5s ease-in-out;
-
-}
-
 /* section02 */
 
 .section02{
@@ -567,15 +542,13 @@
 }
 
 .se07{
-    padding: 100px 0;
+    padding: 150px 0;
     height: 100%;
     box-sizing: border-box;
 }
 
 
-.accordion{
-    margin-top: 80px;
-}
+
 .accordion-item {
     padding:15px 0;
     margin: 0;
@@ -591,7 +564,7 @@
     letter-spacing: -0.03em;
     cursor: pointer;
     width: 100%;
-    height: 80px;
+    height: 82px;
     border-radius: 50px;
     background-color: #fff;
     color: var(--main-color);
@@ -603,20 +576,19 @@
 .accordion-item .title img {
     font-size: 0.9rem;
     color: #454545;
-    transform: rotate(0);
+    transform: translateX(-50%) rotate(0);
     transition: transform 0.15s ease;
 }
 
 .accordion-item .paragraph {
-    font-weight: 500;
-    font-size: 25px;
-    letter-spacing: -0.03em;
-    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    color: #1A1A1A;
     display: none;
-    padding: 50px 70px 35px;
+    padding: 1rem 0;
     list-style: inside;
-    line-height: 50px;
-    font-family: 'GmarketSans';
+
 }
 
 .accordion-item .paragraph .indent{
@@ -628,12 +600,19 @@
     font-weight: bold;
 }
 
+
+
+.accordion-item.active .title{
+
+}
+
 .accordion-item.active .title img{
     transform: rotate(180deg);
 }
 
 .accordion-item.active .paragraph {
     display: block;
+    padding: 30px 0;
 }
 
 
@@ -642,64 +621,4 @@
 .section08{
     height:378px;
     background: url('../img/banner.jpg') no-repeat;
-}
-.se08{
-    position: relative;
-    height: 100%;
-}
-
-.se08_postion{
-    position: absolute;
-    top: 80px;
-    left: 50%;
-}
-
-.se08_title{
-    font-family: 'NanumSquare';
-    font-weight: 600;
-    font-size: 23px;
-    letter-spacing: -0.05em;
-    line-height: 50px;
-    position: relative;
-}
-
-.se08_title::before{
-    position: absolute;
-    content: '';
-    top: -7px;
-    width: 32px;
-    height: 3px;
-    background-color:#543F2C;
-    left: 0;
-}
-
-.se08_descript{
-    font-family: 'NanumSquare';
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 28px;
-    letter-spacing: -0.06em;
-}
-
-.more_btn{
-    margin-top: 38px;
-    width: 150px;
-    height: 40px;
-    background: #543F2C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.more_btn p{
-    font-family: 'NanumSquare';
-    font-weight: 500;
-    font-size: 18px;
-    color: #fff;
-
-}
-
-.more_btn svg{
-    fill: #fff;
 }

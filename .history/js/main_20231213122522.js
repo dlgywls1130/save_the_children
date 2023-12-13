@@ -32,7 +32,7 @@ const accordionItem = document.querySelectorAll(".accordion-item");
 //rolling
 
 document.addEventListener('DOMContentLoaded', function () {
-    var words = ['백일', '첫 옹알이', '첫 뒤집기', '첫 나들이', '첫 이유식', '첫돌', '첫 걸음마', '모든'];
+    var words = ['탄생', '백일', '첫 옹알이', '첫 뒤집기', '첫 나들이', '첫 이유식', '첫돌', '첫 걸음마', '모든'];
     var index = 0;
     var rollingText = document.getElementById('rollingText');
 

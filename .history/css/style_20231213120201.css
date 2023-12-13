@@ -177,13 +177,8 @@
     letter-spacing: -0.03em;
     margin-top: -4%;
     margin-bottom: 50px;
-    display: flex;
-    align-items: center;
 }
 
-.seo01_title_two span{
-    margin: 0 1.5rem;
-}
 .section_descript{
     font-size: 25px;
     line-height: 35px;
@@ -209,26 +204,6 @@
     text-decoration: none;
     margin: 45px auto 0;
 }
-
-
-@keyframes roll {
-    from {
-        transform: translateY(40%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-  }
-  
-
-#rollingText {
-    display: inline-block;
-    animation: roll 0.5s ease-in-out;
-
-}
-
 /* section02 */
 
 .section02{
@@ -646,11 +621,12 @@
 .se08{
     position: relative;
     height: 100%;
+    padding: 80px 0;
 }
 
 .se08_postion{
     position: absolute;
-    top: 80px;
+    top: 0;
     left: 50%;
 }
 
@@ -660,17 +636,6 @@
     font-size: 23px;
     letter-spacing: -0.05em;
     line-height: 50px;
-    position: relative;
-}
-
-.se08_title::before{
-    position: absolute;
-    content: '';
-    top: -7px;
-    width: 32px;
-    height: 3px;
-    background-color:#543F2C;
-    left: 0;
 }
 
 .se08_descript{
@@ -689,7 +654,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
 }
 
 .more_btn p{
@@ -697,7 +661,6 @@
     font-weight: 500;
     font-size: 18px;
     color: #fff;
-
 }
 
 .more_btn svg{
