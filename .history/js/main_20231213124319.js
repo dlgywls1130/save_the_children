@@ -31,28 +31,19 @@ const accordionItem = document.querySelectorAll(".accordion-item");
 
 //rolling
 document.addEventListener('DOMContentLoaded', function () {
-    var words = ['백일', '첫 옹알이', '첫 뒤집기', '첫 나들이', '첫 이유식', '첫돌', '첫 걸음마', '모든'];
-    var index = 0;
+    var words = ['백일', '첫 옹알이', '첫 뒤집기', '첫 나들이', '첫 이유식', '첫돌', '첫 걸음마', '모든']; // Start from the second word
+    var index = 0; // Start from the first word in the modified array
     var rollingText = document.getElementById('rollingText');
 
     function updateText() {
-        // 애니메이션 클래스를 추가하여 애니메이션 시작
+        // Add a class to trigger animation
         rollingText.classList.add('animate-text');
 
-        // 텍스트 변경
         rollingText.textContent = words[index++];
-
-        // 약간의 지연 후 애니메이션 클래스 제거
-        setTimeout(function() {
-            rollingText.classList.remove('animate-text');
-        }, 500); // 0.5초 후 클래스 제거
-
-        // 모든 단어가 표시되면 롤링 중지
         if (index === words.length) {
-            clearInterval(intervalId);
+            clearInterval(intervalId); // Stop the rolling when the last word is displayed
         }
     }
 
-    var intervalId = setInterval(updateText, 3000); // 필요에 따라 간격 조정
+    var intervalId = setInterval(updateText, 3000); // Adjust the interval as needed
 });
-
