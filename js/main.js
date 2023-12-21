@@ -53,6 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    var intervalId = setInterval(updateText, 3000); // 필요에 따라 간격 조정
+    var intervalId = setInterval(updateText, 1000); // 필요에 따라 간격 조정
 });
 
