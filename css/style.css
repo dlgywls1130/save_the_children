@@ -95,16 +95,17 @@
 }
 
 
+
+
 .section_wrapper{
     max-width:1920px;
     width: 100%;
-
+    margin: 0 auto;
 }
 
 .se_wrapper{
-    max-width: 1060px;
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 160px;
+    width: 1060px;
     position: relative;
 }
 
@@ -120,9 +121,11 @@
 .section01{
     background: url('../img/back01.jpg') no-repeat;
     height: 1080px;
-    background-size: cover;
     background-position: center;
+    width: 1400px;
+    background-size: cover;
 }
+
 
 .se01{
     padding: 230px 0 70px;
@@ -233,8 +236,9 @@
 .section02{
     height: 1340px;
     background: url('../img/back03.jpg') no-repeat;
-    background-size: cover;
     background-position: center;
+    width: 1400px;
+    background-size: cover;
 }
 
 .se02{
@@ -358,8 +362,9 @@
 .section03{
     height: 1340px;
     background: url('../img/back04.jpg') no-repeat;
-    background-size: cover;
     background-position: center;
+    width: 1400px;
+    background-size: cover;
 }
 
 .se03{
@@ -396,6 +401,7 @@
     background: url('../img/back05.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    width: 1400px;
 }
 
 .se04{
@@ -454,6 +460,7 @@
     background: url('../img/back07.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    width: 1400px;
 }
 
 .se05{
@@ -565,6 +572,7 @@
     background: url('../img/back06.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    width: 1400px;
 }
 
 .se06{
@@ -584,6 +592,7 @@
     background: url('../img/back02.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    width: 1400px;
 }
 
 .se07{
@@ -724,4 +733,20 @@
 
 .more_btn svg{
     fill: #fff;
+}
+
+
+@media screen and (min-width:1400px){
+    .section01,.section02,.section03,.section04,.section05,.section06,.section07{
+        width: 100%;
+    }
+
+
+    .se_wrapper{
+        max-width: 1060px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+    
 }
