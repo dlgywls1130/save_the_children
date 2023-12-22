@@ -120,7 +120,8 @@
 .section01{
     background: url('../img/back01.jpg') no-repeat;
     height: 1080px;
-
+    background-size: cover;
+    background-position: center;
 }
 
 .se01{
@@ -232,6 +233,8 @@
 .section02{
     height: 1340px;
     background: url('../img/back03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .se02{
@@ -355,6 +358,8 @@
 .section03{
     height: 1340px;
     background: url('../img/back04.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .se03{
@@ -389,6 +394,8 @@
 .section04{
     height: 1340px;
     background: url('../img/back05.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .se04{
@@ -445,6 +452,8 @@
 .section05{
     height: 1080px;
     background: url('../img/back07.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .se05{
@@ -554,6 +563,8 @@
 .section06{
     height:700px;
     background: url('../img/back06.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .se06{
@@ -571,6 +582,8 @@
 .section07{
     height:1080px;
     background: url('../img/back02.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .se07{
@@ -649,6 +662,8 @@
 .section08{
     height:378px;
     background: url('../img/banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .se08{
     position: relative;
